@@ -1,0 +1,19 @@
+{
+  "name": "brtr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Don Barto",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2"
+  }
+}
