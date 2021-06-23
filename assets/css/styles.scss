@@ -1,0 +1,44 @@
+$color-primary: #3f51b5;
+$color-secondary: #e63226;
+$color-pale: #ede09c;
+$color-mid: #dafeb9;
+$color-dark: #1a1444;
+$color-black-transparent: rgba(0,0,0,0.5);
+
+$body-font: "Open Sans", sans-serif;
+$header-font: "Roboto";
+body {
+    font-family: $body-font;
+}
+
+h1, h2, h3, h4 {
+    font-family: $header-font;
+}
+
+h2 {
+    color: $color-primary;
+}
+
+.footer {
+    background-image: linear-gradient($color-pale, white);
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 30px;
+    background-image: linear-gradient(to right, $color-pale, $color-mid, $color-pale);
+    color: $color-dark;
+}
+
+.lead {
+    color: $color-dark;
+}
+
+.navbar {
+    background-color: $color-mid;
+}
+
+.caraousel {
+    border: solid $color-secondary;
+}
+

@@ -5,13 +5,19 @@
   "main": "index.js",
   "scripts": {
     "lite": "lite-server",
-    "start": "npm run lite",
+    "scss": "node-sass -o assets/css/ assets/css/",
+    "watch:scss": "onchange \"assets/css/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
+    "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Don Barto",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "lite-server": "^2.6.1",
+    "node-sass": "^4.14.1",
+    "onchange": "^7.0.0",
+    "parallelshell": "3.0.1"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",

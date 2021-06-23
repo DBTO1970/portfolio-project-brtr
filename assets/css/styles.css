@@ -1,0 +1,26 @@
+body {
+  font-family: "Open Sans", sans-serif; }
+
+h1, h2, h3, h4 {
+  font-family: "Roboto"; }
+
+h2 {
+  color: #3f51b5; }
+
+.footer {
+  background-image: linear-gradient(#ede09c, white); }
+
+.jumbotron {
+  margin: 0;
+  padding: 30px;
+  background-image: linear-gradient(to right, #ede09c, #dafeb9, #ede09c);
+  color: #1a1444; }
+
+.lead {
+  color: #1a1444; }
+
+.navbar {
+  background-color: #dafeb9; }
+
+.caraousel {
+  border: solid #e63226; }
