@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <!-- Material Kit Bootstrap UI -->
+    <link rel="stylesheet" href="/assets/css/material-kit.min.css"/>
+    <!-- Fonts and icons -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css"/>
+    
+    <!-- Main CSS over rides -->
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+
+    <title> | BRTR | </title>
+</head>
+<body>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        
+          <div class="col-6 mx-auto">
+            <img class="img-fluid align-top" src="assets/img/brtr_logoArtboard1.png" alt="berjabat"/>
+          </div>
+        </div>
+      <div class="lead col-6 mx-auto font-italic">
+            In trade, barter is a system of exchange in which participants in a transaction directly exchange goods or services for other goods or services without using a medium of exchange, such as money.
+      </div>
+    </div>
+  </div>
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <a class="navbar-brand" href="#"> | BRTR | </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"> Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html"> About </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="contact.html"> Contact </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Log-in
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" role="button" data-toggle="modal" data-target="#loginModal">
+                <i class="fa fa-sign-in p-1"></i>Member Login</a>
+            <a class="dropdown-item" role="button" data-toggle="modal" data-target="#sign-up-modal">
+              <i class="fa fa-user-plus p-1"></i>Guest | Join</a>
+              
+            </div>
+          </li>
+        </ul>
+        
+        <!-- <span class="navbar-text ml-auto">
+          
+      </span> -->
+      </div>
+    </nav>
+    <!-- Start of login modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-login" role="document">
+          <div class="modal-content">
+              <div class="card card-signup card-plain">
+                  <div class="modal-header">
+                    <div class="card-header card-header-primary text-center">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        <i class="material-icons">clear</i>
+                      </button>
+  
+                      <h4 class="card-title">Log in</h4>
+                      <div class="social-line">
+                        <a href="https://www.facebook.com/" class="btn btn-just-icon btn-link btn-white">
+                          <i class="fa fa-facebook-square"></i>
+                        </a>
+                        <a href="https://myaccount.google.com/" class="btn btn-just-icon btn-link btn-white">
+                          <i class="fa fa-google"></i>
+                        </a>
+                        <a href="https://twitter.com/" class="btn btn-just-icon btn-link btn-white">
+                          <i class="fa fa-twitter"></i>
+                        <div class="ripple-container"></div></a>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-body">
+                      <form class="form" action="member.html" id="login-modal">
+                          <p class="description text-center"> Or </p>
+                          <div class="card-body">
+  
+                              <div class="form-group bmd-form-group">
+                                  <div class="input-group">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="material-icons">face</i></div>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="First Name...">
+                                  </div>
+                              </div>
+  
+                              <div class="form-group bmd-form-group">
+                                  <div class="input-group">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="material-icons">email</i></div>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Email...">
+                                  </div>
+                              </div>
+  
+                              <div class="form-group bmd-form-group">
+                                  <div class="input-group">
+                                    <div class="input-group-prepend">
+                                      <div class="input-group-text"><i class="material-icons">lock_outline</i></div>
+                                    </div>
+                                    <input type="password" placeholder="Password..." class="form-control">
+                                  </div>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+                  <div class="modal-footer justify-content-center">
+                      <button type="submit" form="login-modal" class="btn btn-primary bg-primary text-white btn-link btn-wd btn-lg" value="Submit"> | BRTR | </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div> <!-- end of login modal-->
+
+  <!-- start of sign up modal -->
+  <div class="modal fade" id="sign-up-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-signup modal-lg" role="document">
+      <div class="modal-content">
+        <div class="card card-signup card-plain">
+          <div class="modal-header">
+            <h5 class="modal-title card-title">Register</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="material-icons">clear</i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-5 ml-auto">
+                <div class="info info-horizontal">
+                  <div class="icon icon-rose">
+                    <i class="fa fa-superpowers"></i>
+                  </div>
+                  <div class="description">
+                    <h4 class="info-title">Why | BRTR | ?</h4>
+                    <div class="description">
+                      <p>Centuries-old method of commerce, based on the trade of goods or services without relying on money.</p>
+                    <p>Find artisans, crafters and producers of goods and services in your location, and support a robust and fair method of trade.</p>
+                    <p>Maximize your productivity, by trading a good or service locally, with someone else in need.</p>
+                    <p>Find other like-minded people locally, while supporting a larger community.</p>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="info info-horizontal">
+                  <div class="icon icon-primary">
+                    <i class="fa fa-shopping-basket"></i>
+                  </div>
+                  <div class="description">
+                    <h4 class="info-title">Goods and Services</h4>
+                    <div class="description">
+                    <p>If it can be made, grown, fixed, built, or consulted on, you can likely find someone willing to barter it.</p>
+                    <p>Local availability of goods and services is limited by geographic location.  However, many goods and services can be exchanged via shipping or digitally!</p>
+                    <p>With a growing network of | BRTR | members, more and more goods and services can be traded and exchanged!</p>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="info info-horizontal">
+                  <div class="icon icon-info">
+                    <i class="material-icons">group</i>
+                  </div>
+                  <div class="description">
+                    <h4 class="info-title">Community</h4>
+                    <div class="description">
+                    <p>Join other creative and talented individuals, as we make this world a little better, a littler cleaner, a little more fair.</p>
+                    <p>Securely trade using the | BRTR | platform as a way to communicate and safely arrange for trades in local 'safe zones'.  With real-time messaging, your personal information never needs to be shared to arrange trades!  Just message and arrange terms, time/method/location of trade, and you are all set!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-md-5 mr-auto">
+                
+                <div class="social text-center">
+                  <a href="https://www.facebook.com/" class="btn btn-just-icon btn-round btn-facebook">
+                    <i class="fa fa-facebook"> </i>
+                  </a>
+                  <a href="https://myaccount.google.com" class="btn btn-just-icon btn-round btn-dribbble">
+                    <i class="fa fa-google"></i>
+                  </a>
+                  <a href="https://twitter.com/" class="btn btn-just-icon btn-round btn-twitter">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <h4> Or </h4>
+                </div>
+  
+                <form class="form" action="guest.html" id="sign-up-form">
+                  <div class="card-body">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text"><i class="material-icons">face</i></div>
+                        </div>
+                          <input type="text" class="form-control" placeholder="First Name...">
+                      </div>
+                    </div>
+  
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text"><i class="material-icons">email</i>
+                        </div>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Email..."/>
+                    </div>
+                  </div>
+  
+                  <div class="form-group">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text"><i class="material-icons">lock_outline</i></div>
+                      </div>
+                        <input type="password" placeholder="Password..." class="form-control" />
+                    </div>
+                  </div>
+  
+                  <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <span class="form-check-sign">
+                            <span class="check"></span>
+                        </span>
+                        I agree to the <a href="terms.html">terms and conditions</a>.
+                    </label>
+                  </div>
+                  </div>
+                  <div class="modal-footer justify-content-center">
+                  <button type="submit" form="sign-up-form" class="btn btn-primary btn-round" value="Submit">Get Started</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+  <!-- end of join modal -->
+    <div class="col mx-auto"><h1>Terms and Conditions</h1><h1>General Site Usage</h1><p>Last Revised: December 16, 2013</p><p>Welcome to www.lorem-ipsum.info. This site is provided as a service to our visitors and may be used for informational purposes only. Because the Terms and Conditions contain legal obligations, please read them carefully.</p><h2>1. YOUR AGREEMENT</h2><p>By using this Site, you agree to be bound by, and to comply with, these Terms and Conditions. If you do not agree to these Terms and Conditions, please do not use this site.</p><blockquote>PLEASE NOTE: We reserve the right, at our sole discretion, to change, modify or otherwise alter these Terms and Conditions at any time. Unless otherwise indicated, amendments will become effective immediately. Please review these Terms and Conditions periodically. Your continued use of the Site following the posting of changes and/or modifications will constitute your acceptance of the revised Terms and Conditions and the reasonableness of these standards for notice of changes. For your information, this page was last updated as of the date at the top of these terms and conditions.</blockquote><h2>2. PRIVACY</h2><p>Please review our Privacy Policy, which also governs your visit to this Site, to understand our practices.</p><h2>3. LINKED SITES</h2><p>This Site may contain links to other independent third-party Web sites ("Linked Sites”). These Linked Sites are provided solely as a convenience to our visitors. Such Linked Sites are not under our control, and we are not responsible for and does not endorse the content of such Linked Sites, including any information or materials contained on such Linked Sites. You will need to make your own independent judgment regarding your interaction with these Linked Sites.</p><h2>4. FORWARD LOOKING STATEMENTS</h2><p>All materials reproduced on this site speak as of the original date of publication or filing. The fact that a document is available on this site does not mean that the information contained in such document has not been modified or superseded by events or by a subsequent document or filing. We have no duty or policy to update any information or statements contained on this site and, therefore, such information or statements should not be relied upon as being current as of the date you access this site.</p><h2>5. DISCLAIMER OF WARRANTIES AND LIMITATION OF LIABILITY</h2><p>A. THIS SITE MAY CONTAIN INACCURACIES AND TYPOGRAPHICAL ERRORS. WE DOES NOT WARRANT THE ACCURACY OR COMPLETENESS OF THE MATERIALS OR THE RELIABILITY OF ANY ADVICE, OPINION, STATEMENT OR OTHER INFORMATION DISPLAYED OR DISTRIBUTED THROUGH THE SITE. YOU EXPRESSLY UNDERSTAND AND AGREE THAT: (i) YOUR USE OF THE SITE, INCLUDING ANY RELIANCE ON ANY SUCH OPINION, ADVICE, STATEMENT, MEMORANDUM, OR INFORMATION CONTAINED HEREIN, SHALL BE AT YOUR SOLE RISK; (ii) THE SITE IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS; (iii) EXCEPT AS EXPRESSLY PROVIDED HEREIN WE DISCLAIM ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, WORKMANLIKE EFFORT, TITLE AND NON-INFRINGEMENT; (iv) WE MAKE NO WARRANTY WITH RESPECT TO THE RESULTS THAT MAY BE OBTAINED FROM THIS SITE, THE PRODUCTS OR SERVICES ADVERTISED OR OFFERED OR MERCHANTS INVOLVED; (v) ANY MATERIAL DOWNLOADED OR OTHERWISE OBTAINED THROUGH THE USE OF THE SITE IS DONE AT YOUR OWN DISCRETION AND RISK; and (vi) YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR FOR ANY LOSS OF DATA THAT RESULTS FROM THE DOWNLOAD OF ANY SUCH MATERIAL.</p><p>B. YOU UNDERSTAND AND AGREE THAT UNDER NO CIRCUMSTANCES, INCLUDING, BUT NOT LIMITED TO, NEGLIGENCE, SHALL WE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE OR CONSEQUENTIAL DAMAGES THAT RESULT FROM THE USE OF, OR THE INABILITY TO USE, ANY OF OUR SITES OR MATERIALS OR FUNCTIONS ON ANY SUCH SITE, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE FOREGOING LIMITATIONS SHALL APPLY NOTWITHSTANDING ANY FAILURE OF ESSENTIAL PURPOSE OF ANY LIMITED REMEDY.</p><h2>6. EXCLUSIONS AND LIMITATIONS</h2><p>SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN WARRANTIES OR THE LIMITATION OR EXCLUSION OF LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES. ACCORDINGLY, OUR LIABILITY IN SUCH JURISDICTION SHALL BE LIMITED TO THE MAXIMUM EXTENT PERMITTED BY LAW.</p><h2>7. OUR PROPRIETARY RIGHTS</h2><p>This Site and all its Contents are intended solely for personal, non-commercial use. Except as expressly provided, nothing within the Site shall be construed as conferring any license under our or any third party's intellectual property rights, whether by estoppel, implication, waiver, or otherwise. Without limiting the generality of the foregoing, you acknowledge and agree that all content available through and used to operate the Site and its services is protected by copyright, trademark, patent, or other proprietary rights. You agree not to: (a) modify, alter, or deface any of the trademarks, service marks, trade dress (collectively "Trademarks") or other intellectual property made available by us in connection with the Site; (b) hold yourself out as in any way sponsored by, affiliated with, or endorsed by us, or any of our affiliates or service providers; (c) use any of the Trademarks or other content accessible through the Site for any purpose other than the purpose for which we have made it available to you; (d) defame or disparage us, our Trademarks, or any aspect of the Site; and (e) adapt, translate, modify, decompile, disassemble, or reverse engineer the Site or any software or programs used in connection with it or its products and services.</p><p>The framing, mirroring, scraping or data mining of the Site or any of its content in any form and by any method is expressly prohibited.</p><h2>8. INDEMNITY</h2><p>By using the Site web sites you agree to indemnify us and affiliated entities (collectively "Indemnities") and hold them harmless from any and all claims and expenses, including (without limitation) attorney's fees, arising from your use of the Site web sites, your use of the Products and Services, or your submission of ideas and/or related materials to us or from any person's use of any ID, membership or password you maintain with any portion of the Site, regardless of whether such use is authorized by you.</p><h2>9. COPYRIGHT AND TRADEMARK NOTICE</h2><p>Except our generated dummy copy, which is free to use for private and commercial use, all other text is copyrighted. generator.lorem-ipsum.info © 2013, all rights reserved</p><h2>10. INTELLECTUAL PROPERTY INFRINGEMENT CLAIMS</h2><p>It is our policy to respond expeditiously to claims of intellectual property infringement. We will promptly process and investigate notices of alleged infringement and will take appropriate actions under the Digital Millennium Copyright Act ("DMCA") and other applicable intellectual property laws. Notices of claimed infringement should be directed to:</p><p>generator.lorem-ipsum.info</p><p>126 Electricov St.</p><p>Kiev, Kiev 04176</p><p>Ukraine</p><p>contact@lorem-ipsum.info</p><h2>11. PLACE OF PERFORMANCE</h2><p>This Site is controlled, operated and administered by us from our office in Kiev, Ukraine. We make no representation that materials at this site are appropriate or available for use at other locations outside of the Ukraine and access to them from territories where their contents are illegal is prohibited. If you access this Site from a location outside of the Ukraine, you are responsible for compliance with all local laws.</p><h2>12. GENERAL</h2><p>A. If any provision of these Terms and Conditions is held to be invalid or unenforceable, the provision shall be removed (or interpreted, if possible, in a manner as to be enforceable), and the remaining provisions shall be enforced. Headings are for reference purposes only and in no way define, limit, construe or describe the scope or extent of such section. Our failure to act with respect to a breach by you or others does not waive our right to act with respect to subsequent or similar breaches. These Terms and Conditions set forth the entire understanding and agreement between us with respect to the subject matter contained herein and supersede any other agreement, proposals and communications, written or oral, between our representatives and you with respect to the subject matter hereof, including any terms and conditions on any of customer's documents or purchase orders.</p><p>B. No Joint Venture, No Derogation of Rights. You agree that no joint venture, partnership, employment, or agency relationship exists between you and us as a result of these Terms and Conditions or your use of the Site. Our performance of these Terms and Conditions is subject to existing laws and legal process, and nothing contained herein is in derogation of our right to comply with governmental, court and law enforcement requests or requirements relating to your use of the Site or information provided to or gathered by us with respect to such use.</p>
+</div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="btn-group mx-auto">
+            <div class="col">
+              <a role="button" data-toggle="modal" data-target="#sign-up-modal" class="btn btn-primary text-light">
+                <i class="fa fa-user-plus p-1"></i> Join | BRTR | </a>
+            </div>
+            <div class="col">
+              <a role="button" data-toggle="modal" data-target="#loginModal" class="btn btn-primary text-white">
+                <i class="fa fa-sign-in p-1"></i>Member Log-in</a>
+            </div>
+          </div>
+        </div>
+        <div class="col h4"><a href="credits.html" class="btn btn-dark"><i class=" fa fa-camera-retro p-1"></i>Photo Credits</a>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap Material Kit UI -->
+    <script src="/assets/js/core/jquery.min.js"></script>
+    <script src="/assets/js/core/popper.min.js"></script>
+    <script src="/assets/js/core/bootstrap-material-design.min.js"></script>
+    <script src="/assets/js/plugins/moment.min.js"></script>
+    <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+    <script src="assets/js/plugins/bootstrap-datetimepicker.js"></script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script src="assets/js/plugins/nouislider.min.js"></script>
+    <!--  Google Maps Plugin  -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+    <script src="assets/js/material-kit.js?v=2.0.7"></script>
+    <!-- Any other custom javascript for the page  -->
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>
