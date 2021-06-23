@@ -23,7 +23,7 @@
         <div class="col">
           <div class="col mx-auto">
             <div class="col mx-auto">
-              <img class="img-fluid align-top" src="assets/img/brtr_logoArtboard 1.png" alt="berjabat"/>
+              <img class="img-fluid align-top" src="assets/img/brtr_logoArtboard1.png" alt="berjabat"/>
             </div>
           </div>
         </div>
@@ -37,34 +37,122 @@
     </div>
   </div>
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-      <a class="navbar-brand" href="index.html"> | BRTR | </a>
+      <a class="navbar-brand" href="#"> | BRTR | </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
-          </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#"> About </a>
+            <a class="nav-link" href="index.html"> Home <span class="sr-only"></span></a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="contact.html"> Contact </a>
+            <a class="nav-link" href="#"> About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="contact.html"> Contact <span class="sr-only"></span></a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Log-in
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="member.html">Member</a>
-              <a class="dropdown-item" href="guest.html">Guest/Join</a>
+              <a role="button" data-toggle="modal" data-target="#loginModal">
+                <i class="fa fa-sign-in"></i>Member Login</a>
+            <a role="button" data-toggle="modal" data-target="#sign-up-modal">
+              <i class="fa fa-sign-in"></i>Guest/Join</a>
               
             </div>
           </li>
         </ul>
+        <span class="navbar-text ml-auto">
+          
+      </span>
       </div>
     </nav>
+    <div id="loginModal" class="modal fade" role="dialog">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h3 class="modal-title">Login</h3>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <div class="container-fluid">
+                      <form>
+                          <div class="form-row">
+                              <div class="form-group col-12">
+                                  <label for="loginEmail" class="sr-only">Email Address</label>
+                                  <input type="email" id="loginEmail" class="form-control form-control-sm" placeholder="Enter email">
+                              </div>
+                              <div class="form-group col-12">
+                                  <label for="loginPassword" class="sr-only">Password</label>
+                                  <input type="password" id="loginPassword" class="form-control form-control-sm" placeholder="Password">
+                              </div>
+                              <div class="form-check">
+                                <label class="form-check-label" for="remember-me">
+                                    <input class="form-check-input" type="checkbox" value="" id="remember-me" name="remember-me">
+                                    Remember Me
+                                    <span class="form-check-sign">
+                                        <span class="check"></span>
+                                    </span>
+                                </label>
+                              </div>
+                          </div>
+                          <div class="form-row">
+                              <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                              <a type="button" class="btn btn-primary btn-sm ml-1" id="login-submit" href="member.html">Sign in</a>
+                          </div>
+                      </form>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <div id="sign-up-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Join</h3>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-12">
+                                <label for="join-email" class="sr-only">Email Address</label>
+                                <input type="email" id="join-email" class="form-control form-control-sm" placeholder="Enter email">
+                            </div>
+                            <div class="form-group col-12">
+                                <label for="join-password" class="sr-only">Password</label>
+                                <input type="password" id="join-password" class="form-control form-control-sm" placeholder="Password">
+                                <label for="join-password-confirm" class="sr-only">Confirm Password</label>
+                                <input type="password" id="join-password-confirm" class="form-control form-control-sm" placeholder="Re-Enter Password">
+                            </div>
+                            <div class="form-check">
+                              <label class="form-check-label" for="join-remember-me">
+                                  <input class="form-check-input" type="checkbox" value="" id="join-remember-me" name="join-remember-me">
+                                  Remember Me
+                                  <span class="form-check-sign">
+                                      <span class="check"></span>
+                                  </span>
+                              </label>
+                            </div>
+                            
+                        </div>
+                        <div class="form-row">
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                            <a type="button" class="btn btn-primary btn-sm ml-1" id="join-submit" href="guest.html">Sign in</a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
     <div class="container">
       <div class="row">
         <div class="col col-md-10">
