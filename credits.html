@@ -21,16 +21,14 @@
   <div class="jumbotron">
     <div class="container">
       <div class="row">
-        <div class="col">
+        
           <div class="col-6 mx-auto">
-            <img class="img-fluid align-top" src="assets/img/brtr_logoArtboard1.png" width="500" alt="berjabat"/>
+            <img class="img-fluid align-top" src="assets/img/brtr_logoArtboard1.png" alt="berjabat"/>
           </div>
         </div>
       <div class="lead col-6 mx-auto font-italic">
             In trade, barter is a system of exchange in which participants in a transaction directly exchange goods or services for other goods or services without using a medium of exchange, such as money.
       </div>
-    </div>
-    
     </div>
   </div>
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
@@ -69,7 +67,7 @@
       </div>
     </nav>
     <!-- Start of login modal -->
-    <div class="modal fade" id="loginModal" tabindex="-1" role="">
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
       <div class="modal-dialog modal-login" role="document">
           <div class="modal-content">
               <div class="card card-signup card-plain">
@@ -95,7 +93,7 @@
                     </div>
                   </div>
                   <div class="modal-body">
-                      <form class="form" method="" action="">
+                      <form class="form" action="member.html" id="login-modal">
                           <p class="description text-center"> Or </p>
                           <div class="card-body">
   
@@ -129,7 +127,7 @@
                       </form>
                   </div>
                   <div class="modal-footer justify-content-center">
-                      <a href="member.html" class="btn btn-primary btn-link btn-wd btn-lg"> | BRTR | </a>
+                      <button type="submit" form="login-modal" class="btn btn-primary bg-primary text-white btn-link btn-wd btn-lg" value="Submit"> | BRTR | </button>
                   </div>
               </div>
           </div>
@@ -208,7 +206,7 @@
                   <h4> Or </h4>
                 </div>
   
-                <form class="form" method="" action="">
+                <form class="form" action="guest.html" id="sign-up-form">
                   <div class="card-body">
                     <div class="form-group">
                       <div class="input-group">
@@ -248,7 +246,7 @@
                   </div>
                   </div>
                 <div class="modal-footer justify-content-center">
-                <a href="guest.html" class="btn btn-primary btn-round">Get Started</a>
+                <button type="submit" form="sign-up-form" class="btn btn-primary btn-round" value="Submit">Get Started</button>
                 </div>
                 </form>
               </div>
@@ -285,7 +283,7 @@
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="btn-group">
+        <div class="btn-group mx-auto">
           <div class="col">
             <a role="button" data-toggle="modal" data-target="#sign-up-modal" class="btn btn-primary text-light">
               <i class="fa fa-user-plus p-1"></i> Join | BRTR | </a>

@@ -21,16 +21,14 @@
   <div class="jumbotron">
     <div class="container">
       <div class="row">
-        <div class="col">
+        
           <div class="col-6 mx-auto">
-            <img class="img-fluid align-top" src="assets/img/brtr_logoArtboard1.png" width="500" alt="berjabat"/>
+            <img class="img-fluid align-top" src="assets/img/brtr_logoArtboard1.png" alt="berjabat"/>
           </div>
         </div>
       <div class="lead col-6 mx-auto font-italic">
             In trade, barter is a system of exchange in which participants in a transaction directly exchange goods or services for other goods or services without using a medium of exchange, such as money.
       </div>
-    </div>
-    
     </div>
   </div>
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
@@ -41,13 +39,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#"> Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html"> Home <span class="sr-only"></span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"> About </a>
+            <a class="nav-link" href="#"> About <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="contact.html"> Contact </a>
+              <a class="nav-link" href="contact.html"> Contact <span class="sr-only"></span></a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -69,7 +67,7 @@
       </div>
     </nav>
     <!-- Start of login modal -->
-    <div class="modal fade" id="loginModal" tabindex="-1" role="">
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
       <div class="modal-dialog modal-login" role="document">
           <div class="modal-content">
               <div class="card card-signup card-plain">
@@ -95,7 +93,7 @@
                     </div>
                   </div>
                   <div class="modal-body">
-                      <form class="form" method="" action="">
+                      <form class="form" action="member.html" id="login-modal">
                           <p class="description text-center"> Or </p>
                           <div class="card-body">
   
@@ -129,7 +127,7 @@
                       </form>
                   </div>
                   <div class="modal-footer justify-content-center">
-                      <a href="member.html" class="btn btn-primary btn-link btn-wd btn-lg"> | BRTR | </a>
+                      <button type="submit" form="login-modal" class="btn btn-primary bg-primary text-white btn-link btn-wd btn-lg" value="Submit"> | BRTR | </button>
                   </div>
               </div>
           </div>
@@ -208,7 +206,7 @@
                   <h4> Or </h4>
                 </div>
   
-                <form class="form" method="" action="">
+                <form class="form" action="guest.html" id="sign-up-form">
                   <div class="card-body">
                     <div class="form-group">
                       <div class="input-group">
@@ -248,7 +246,7 @@
                   </div>
                   </div>
                 <div class="modal-footer justify-content-center">
-                <a href="guest.html" class="btn btn-primary btn-round">Get Started</a>
+                <button type="submit" form="sign-up-form" class="btn btn-primary btn-round" value="Submit">Get Started</button>
                 </div>
                 </form>
               </div>
@@ -259,12 +257,72 @@
     </div>
   </div> 
   <!-- end of join modal -->
+
+  <!-- Using Cards but may switch to accordion for this page content -->
     <div class="container">
       <div class="row">
-        <div class="col col-md-10">
-          <p>| BRTR | serves to connect craftspeople, artists and makers of all sorts so that they may trade their goods or services with each other.  | BRTR | is not a "web store", nor are there any goods for sale. If you would like to relate | BRTR | to something, then consider it a social connection platform geared toward those who make goods and/or provide services they are willing to trade or barter.</p>
-          <p>Members are able to search and connect with each other, and arrange any transactions in the 'real world' in person or via shipping.</p>
-          <p>Members may provide website or contact information at their own discretion, and may opt to sell goods outside of this platform.</p>
+        <div class="col col-md-6 mx-auto">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="card-title">What is | BRTR | ?</h4>
+            </div>
+            <div class="card-body">
+              <p>| BRTR | serves to connect craftspeople, artists and makers of all sorts so that they may trade their goods or services with each other.  | BRTR | is not a "web store", nor are there any goods for sale. If you would like to relate | BRTR | to something, then consider it a social connection platform geared toward those who make goods and/or provide services they are willing to trade or barter.</p>
+              <p>Members are able to search and connect with each other, and arrange any transactions in the 'real world' in person or via shipping.</p>
+              <p>Members may provide website or contact information at their own discretion, and may opt to sell goods outside of this platform.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col col-md-6 mx-auto">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="card-title"> <i class="fa fa-superpowers p-1"></i>Why | BRTR | ?</h4>
+              
+            </div>
+            <div class="card-body">
+              <p>Centuries-old method of commerce, based on the trade of goods or services without relying on money.</p>
+              <p>Find artisans, crafters and producers of goods and services in your location, and support a robust and fair method of trade.</p>
+              <p>Maximize your productivity, by trading a good or service locally, with someone else in need.</p>
+              <p>Find other like-minded people locally, while supporting a larger community.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col col-md-6 mx-auto">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="card-title"> <i class="fa fa-shopping-basket p-1"></i>Goods and Services</h4>
+              
+            </div>
+            <div class="card-body">
+              <p>If it can be made, grown, fixed, built, or consulted on, you can likely find someone willing to barter it.</p>
+              <p>Local availability of goods and services is limited by geographic location.  However, many goods and services can be exchanged via shipping or digitally!</p>
+              <p>With a growing network of | BRTR | members, more and more goods and services can be traded and exchanged!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col col-md-6 mx-auto">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="card-title"> <i class="material-icons p-1">group</i>Community</h4>
+              
+            </div>
+            <div class="card-body">
+              <p>Join other creative and talented individuals, as we make this world a little better, a littler cleaner, a little more fair.</p>
+              <p>Securely trade using the | BRTR | platform as a way to communicate and safely arrange for trades in local 'safe zones'.  With real-time messaging, your personal information never needs to be shared to arrange trades!  Just message and arrange terms, time/method/location of trade, and you are all set!</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -272,7 +330,7 @@
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="btn-group">
+          <div class="btn-group mx-auto">
             <div class="col">
               <a role="button" data-toggle="modal" data-target="#sign-up-modal" class="btn btn-primary text-light">
                 <i class="fa fa-user-plus p-1"></i> Join | BRTR | </a>
