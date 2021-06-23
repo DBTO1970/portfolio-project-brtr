@@ -35,10 +35,17 @@ h2 {
 }
 
 .navbar {
-    background-color: $color-mid;
+    background-color: $color-pale;
 }
 
 .caraousel {
     border: solid $color-secondary;
 }
+.btn-dark {
+     background-color: $color-dark;
+     color: $color-pale;
+ }
 
+ .btn-primary {
+     
+ }

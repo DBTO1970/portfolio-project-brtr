@@ -20,7 +20,11 @@ h2 {
   color: #1a1444; }
 
 .navbar {
-  background-color: #dafeb9; }
+  background-color: #ede09c; }
 
 .caraousel {
   border: solid #e63226; }
+
+.btn-dark {
+  background-color: #1a1444;
+  color: #ede09c; }
