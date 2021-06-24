@@ -13,8 +13,8 @@ $color-black-transparent: rgba(0,0,0,0.5);
   margin-bottom: 30px;
   margin-top: 30px;
   border-radius: $border-radius-large;
-  color: $gray-dark;
-  background: $white-color;
+  color: $color-dark;
+  background: $color-pale;
   width: 100%;
 
     .card-category:not([class*="text-"]) {
@@ -110,7 +110,7 @@ $color-black-transparent: rgba(0,0,0,0.5);
       margin-right: 15px;
       margin-top: -30px;
       border: 0;
-      background: linear-gradient(60deg, $color-pale, $color-dark);
+      background: linear-gradient(60deg, $color-pale, $color-mid);
 
       .title{
         color: $white-color;

@@ -33,7 +33,10 @@ h2 {
     margin: 0;
     padding: 30px;
     background-image: linear-gradient(to right, $color-pale, $color-mid, $color-pale);
-    color: $color-dark;
+    
+    .lead {
+    color: $color-primary;
+    }
 }
 
 .lead {
@@ -50,9 +53,18 @@ h2 {
 
 
  .footer {
-     .btn {
+     .h4 {
+         .btn-primary {
      background-color:$color-secondary;
      color: $color-pale;
-     }
+     };
+    };
+     .btn-group {
+        
+         .btn-primary {         
+            background-color:$color-primary;
+            
+         };
+     };
  }
 

@@ -18639,8 +18639,8 @@ footer {
   margin-bottom: 30px;
   margin-top: 30px;
   border-radius: 6px;
-  color: rgba(0, 0, 0, 0.87);
-  background: #ffffff;
+  color: #1a1444;
+  background: #ede09c;
   width: 100%;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
   .card .card-category:not([class*="text-"]) {
@@ -18695,7 +18695,7 @@ footer {
     margin-right: 15px;
     margin-top: -30px;
     border: 0;
-    background: linear-gradient(60deg, #ede09c, #1a1444); }
+    background: linear-gradient(60deg, #ede09c, #dafeb9); }
     .card .card-header .title {
       color: #ffffff; }
     .card .card-header:not([class*="header-"]) {
@@ -20082,8 +20082,9 @@ h2 {
 .jumbotron {
   margin: 0;
   padding: 30px;
-  background-image: linear-gradient(to right, #ede09c, #dafeb9, #ede09c);
-  color: #1a1444; }
+  background-image: linear-gradient(to right, #ede09c, #dafeb9, #ede09c); }
+  .jumbotron .lead {
+    color: #3f51b5; }
 
 .lead {
   color: #3f51b5; }
@@ -20094,6 +20095,9 @@ h2 {
 .caraousel {
   border: solid #e63226; }
 
-.footer .btn {
+.footer .h4 .btn-primary {
   background-color: #e63226;
   color: #ede09c; }
+
+.footer .btn-group .btn-primary {
+  background-color: #3f51b5; }
