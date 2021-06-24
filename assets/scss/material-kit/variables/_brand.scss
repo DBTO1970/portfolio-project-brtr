@@ -2,10 +2,17 @@
 
 /*     brand Colors              */
 
-$primary:              $purple-500 !default;
+$color-primary: #3f51b5;
+$color-secondary: #e63226;
+$color-pale: #ede09c;
+$color-mid: #dafeb9;
+$color-dark: #1a1444;
+$color-black-transparent: rgba(0,0,0,0.5);
+
+$primary:              $color-primary !default;
 $info:                 $cyan-500 !default;
-$success:              $green-500 !default;
-$warning:              $orange-500 !default;
-$danger:               $red-500 !default;
-$rose:                 $pink-500 !default;
-$inverse:              $black-color !default;
+$success:              $color-mid !default;
+$warning:              $color-pale !default;
+$danger:               $color-secondary !default;
+$rose:                 $color-secondary !default;
+$inverse:              $color-black-transparent;

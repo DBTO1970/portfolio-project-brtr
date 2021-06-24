@@ -5,6 +5,12 @@ $color-mid: #dafeb9;
 $color-dark: #1a1444;
 $color-black-transparent: rgba(0,0,0,0.5);
 
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../scss/material-kit.scss";
+
 $body-font: "Open Sans", sans-serif;
 $header-font: "Roboto";
 body {
@@ -50,7 +56,3 @@ h2 {
      }
  }
 
- .card-header {
-    
-    background-image: linear-gradient(60deg, $color-pale, $color-dark);
-  }
