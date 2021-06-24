@@ -31,7 +31,7 @@ h2 {
 }
 
 .lead {
-    color: $color-dark;
+    color: $color-primary;
 }
 
 .navbar {
@@ -41,11 +41,16 @@ h2 {
 .caraousel {
     border: solid $color-secondary;
 }
-.btn-dark {
-     background-color: $color-dark;
+
+
+ .footer {
+     .btn {
+     background-color:$color-secondary;
      color: $color-pale;
+     }
  }
 
- .btn-primary {
-     
- }
+ .card-header {
+    
+    background-image: linear-gradient(60deg, $color-pale, $color-dark);
+  }

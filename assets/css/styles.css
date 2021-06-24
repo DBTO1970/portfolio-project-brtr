@@ -17,7 +17,7 @@ h2 {
   color: #1a1444; }
 
 .lead {
-  color: #1a1444; }
+  color: #3f51b5; }
 
 .navbar {
   background-color: #ede09c; }
@@ -25,6 +25,9 @@ h2 {
 .caraousel {
   border: solid #e63226; }
 
-.btn-dark {
-  background-color: #1a1444;
+.footer .btn {
+  background-color: #e63226;
   color: #ede09c; }
+
+.card-header {
+  background-image: linear-gradient(60deg, #ede09c, #1a1444); }
