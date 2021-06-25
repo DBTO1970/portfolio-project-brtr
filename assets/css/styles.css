@@ -20092,6 +20092,9 @@ h2 {
 
 .navbar {
   background-color: #f8f9fa; }
+  .navbar .navbar-brand {
+    margin-left: 1rem;
+    padding: 0 2; }
 
 .caraousel {
   border: solid #6c757d; }

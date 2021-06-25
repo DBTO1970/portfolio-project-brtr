@@ -120,6 +120,10 @@ h2 {
 
 .navbar {
     background-color: $light;
+    .navbar-brand {
+        margin-left: 1rem;
+        padding: 0 2;
+    }
 }
 
 .caraousel {
@@ -129,6 +133,7 @@ h2 {
 .card-header-primary {
     background-color: $primary;
 }
+
 
 
 
