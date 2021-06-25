@@ -20090,14 +20090,25 @@ h2 {
 .lead {
   color: #1e4269; }
 
-.navbar {
-  background-color: #f8f9fa; }
-  .navbar .navbar-brand {
-    margin-left: 1rem;
-    padding: 0 2; }
+.navbar .navbar-brand {
+  margin-left: 1rem;
+  padding: 0 2; }
 
 .caraousel {
   border: solid #6c757d; }
 
 .card-header-primary {
   background-color: #1e4269; }
+
+#date-time {
+  color: #dee2e6;
+  margin: 0 2;
+  padding: 0 2; }
+
+.member-header {
+  background-color: #117528;
+  color: #dee2e6; }
+
+.member-footer {
+  background-color: #117528;
+  color: #dee2e6; }
