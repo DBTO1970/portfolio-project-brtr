@@ -20068,7 +20068,7 @@ footer {
     width: 245px; } }
 
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 h1, h2, h3, h4 {
   font-family: "Roboto"; }
@@ -20082,7 +20082,8 @@ h2 {
 .jumbotron {
   margin: 0;
   padding: 30px;
-  background-image: linear-gradient(to right, #ede09c, #dafeb9, #ede09c); }
+  background-image: radial-gradient(farthest-corner at 0px 20px, #5fc2a4, #dafeb9, #c45f0d);
+  height: auto; }
   .jumbotron .lead {
     color: #1e4269; }
 

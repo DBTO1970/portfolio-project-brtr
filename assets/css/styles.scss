@@ -86,7 +86,7 @@ $theme-colors: map-merge((
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../scss/material-kit.scss";
 
-$body-font: "Open Sans", sans-serif;
+$body-font: "Roboto", sans-serif;
 $header-font: "Roboto";
 body {
     font-family: $body-font;
@@ -107,8 +107,8 @@ h2 {
 .jumbotron {
     margin: 0;
     padding: 30px;
-    background-image: linear-gradient(to right, $color-pale, $color-mid, $color-pale);
-    
+    background-image: radial-gradient(farthest-corner at 0px 20px, $teal, $color-mid, $orange);
+    height: auto;
     .lead {
     color: $primary;
     }
@@ -125,9 +125,6 @@ h2 {
 .caraousel {
     border: solid $secondary;
 }
-
-
-
 
 .card-header-primary {
     background-color: $primary;
