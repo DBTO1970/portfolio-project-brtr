@@ -81,7 +81,7 @@ $theme-colors: map-merge((
   "dark":       $dark
 ), $theme-colors);
 // Custom.scss
-// Option A: Include all of Bootstrap
+
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../scss/material-kit.scss";
@@ -110,20 +110,29 @@ h2 {
     background-image: linear-gradient(to right, $color-pale, $color-mid, $color-pale);
     
     .lead {
-    color: $color-primary;
+    color: $primary;
     }
 }
 
 .lead {
-    color: $color-primary;
+    color: $primary;
 }
 
 .navbar {
-    background-color: $color-pale;
+    background-color: $light;
 }
 
 .caraousel {
-    border: solid $color-secondary;
+    border: solid $secondary;
 }
+
+
+
+
+.card-header-primary {
+    background-color: $primary;
+}
+
+
 
 
