@@ -17,18 +17,18 @@ updateTime();
 
 // return values for messages and trades
 
-let messages = '0';
-let trades = '0';
-fakeData();
+// let messages = '0';
+// let trades = '0';
 
-function fakeData() {
-    for (i = 0; i < 10; i++) {
-        messages = i;
-        trades = i + 1;
-        $("#messages-waiting").html(messages);
-        $("#trades-pending").html(trades);
-    }
 
-}
+// function fakeData() {
+//     for (i = 0; i < 10; i++) {
+//         messages = i;
+//         trades = i + 1;
+//         $("#messages-waiting").html(messages);
+//         $("#trades-pending").html(trades);
+//     }
 
+// }
+// fakeData();
 });
