@@ -17,31 +17,6 @@ $(function() {
         $('.date-time').removeClass('d-none');
         updateTime();
     }
-
-
-
-
-//return values for messages and trades
-
-    
-
-
-    // function fakeData() {
-    //     let messages = '0';
-    //     let trades = '0';
-    //     for (i = 0; i < 10; i++) {
-    //         messages = i;
-    //         trades = i + 1;
-    //         $("#messages-waiting").html(messages);
-    //         $("#trades-pending").html(trades);
-    //     }
-
-    // }
-
-    // if ( $('.member-header').length > 0) {
-       
-    //     fakeData();
-    // }
     
 });
 

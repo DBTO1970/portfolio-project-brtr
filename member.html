@@ -97,6 +97,26 @@
     <script src="assets/js/material-kit.js?v=2.0.7"></script>
     <!-- Any other custom javascript for the page  -->
     <script src="assets/js/app.js"></script>
+    <script>
+      // return values for messages and trades
+
+      
+
+
+        function fakeData() {
+            let messages = '0';
+            let trades = '0';
+            for (i = 0; i < 10; i++) {
+                messages = i;
+                trades = i + 1;
+                $("#messages-waiting").html(messages);
+                $("#trades-pending").html(trades);
+            }
+    
+        }
+    
+        fakeData();
+      </script>
     <!-- endbuild -->
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
