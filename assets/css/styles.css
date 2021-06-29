@@ -20100,15 +20100,31 @@ h2 {
 .card-header-primary {
   background-color: #1e4269; }
 
+.card-body {
+  background-color: #1e4269;
+  color: #dee2e6; }
+
 #date-time {
   color: #dee2e6;
   margin: 0 2;
   padding: 0 2; }
 
 .member-header {
-  background-color: #117528;
+  background-color: #008fa5;
   color: #dee2e6; }
 
 .member-footer {
-  background-color: #117528;
+  background-color: #008fa5;
   color: #dee2e6; }
+
+.guest-header {
+  background-color: #fcd560; }
+  .guest-header #date-time {
+    color: #6c757d; }
+
+.guest-footer {
+  background-color: #fcd560;
+  color: #6c757d; }
+
+.description {
+  color: #6c757d; }

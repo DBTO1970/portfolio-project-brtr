@@ -134,7 +134,10 @@ h2 {
     background-color: $primary;
 }
 
-
+.card-body {
+    background-color: $primary;
+    color: $gray-300;
+}
 #date-time {
     color: $gray-300;
     margin: 0 2;
@@ -142,13 +145,30 @@ h2 {
 }
 
 .member-header {
-    background-color: $success;
+    background-color: $info;
     color: $gray-300;
    }
 .member-footer {
-    background-color: $success;
+    background-color: $info;
     color: $gray-300;
 }
+
+.guest-header {
+    background-color: $warning;
+    #date-time {
+        color: $gray-600;
+    }
+   }
+
+.guest-footer {
+    background-color: $warning;
+    color: $gray-600;
+}
+
+
+.description {
+        color: $gray-600;
+    }
 
 
 
