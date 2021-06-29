@@ -17,6 +17,9 @@ $(function() {
         $('.date-time').removeClass('d-none');
         updateTime();
     }
+
+    // Carousel picture direction change
+    
     
 });
 

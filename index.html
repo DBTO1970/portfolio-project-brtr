@@ -20,7 +20,9 @@
     
     <link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css"/>
     
-    
+    <link rel="stylesheet" href="jqueryui/jquery-ui-1.12.1.custom/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="jqueryui/jquery-ui-1.12.1.custom/jquery-ui.structure.min.css"/>
+    <link rel="stylesheet" href="jqueryui/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css"/>
     <link rel="stylesheet" href="assets/css/styles.css"/>
 <!-- endbuild -->
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
@@ -49,7 +51,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#"> Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link active" href="#"> Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html"> About </a>
@@ -78,7 +80,7 @@
     </nav>
     <!-- clock hidden on this page -->
     <div class="col d-none mr-auto date-time">
-      <h6><i class="fa fa-clock-o p-1"></i><span id="date-time"></span></h6>
+      <h6><i class="fa fa-clock-o p-1"></i><span id="date-time"></span>0</h6>
     </div>
     <!-- Start of login modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
@@ -279,33 +281,33 @@
             <div class="row no-gutters">
               <div class="carousel slide col mx-auto" data-ride="carousel" id="carousel-1">
                   <div class="carousel-inner">
-                    <div class="carousel-item active" data-interval="10000">
-                      <img class="d-block w-100 img-thumbnail" src="assets/img/la-compagnie-robinson-nijXsx-oI7Y-unsplash_sm.png" alt="First slide">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100 img-thumbnail c1" src="assets/img/la-compagnie-robinson-nijXsx-oI7Y-unsplash_sm.png" alt="First slide">
                     </div>
-                    <div class="carousel-item" data-interval="20000">
-                      <img class="d-block w-100 img-thumbnail" src="assets/img/katherine-hanlon-mod2s3-qFOc-unsplash_sm.png" alt="Second slide">
+                    <div class="carousel-item">
+                      <img class="d-block w-100 img-thumbnail c1" src="assets/img/katherine-hanlon-mod2s3-qFOc-unsplash_sm.png" alt="Second slide">
                     </div>
-                    <div class="carousel-item" data-interval="10000">
-                      <img class="d-block w-100 img-thumbnail" src="assets/img/clement-philippe-8g_j67M7Y0w-unsplash_sm.png" alt="Third slide">
+                    <div class="carousel-item">
+                      <img class="d-block w-100 img-thumbnail c1" src="assets/img/clement-philippe-8g_j67M7Y0w-unsplash_sm.png" alt="Third slide">
                     </div>
-                    <div class="carousel-item" data-interval="15000">
-                      <img class="d-block w-100 img-thumbnail" src="assets/img/anis-rahman-L_Z4t_hwDRQ-unsplash_sm.png" alt="Third slide">
+                    <div class="carousel-item">
+                      <img class="d-block w-100 img-thumbnail c1" src="assets/img/anis-rahman-L_Z4t_hwDRQ-unsplash_sm.png" alt="Third slide">
                     </div>
                   </div>
               </div>
               <div class="carousel slide col mx-auto" data-ride="carousel" id="carousel-2">
                 <div class="carousel-inner">
-                  <div class="carousel-item active" data-interval="15000">
-                    <img class="d-block w-100 img-thumbnail" src="assets/img/clement-philippe-8g_j67M7Y0w-unsplash_sm.png" alt="First slide">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100 img-thumbnail c2" src="assets/img/clement-philippe-8g_j67M7Y0w-unsplash_sm.png" alt="First slide">
                   </div>
-                  <div class="carousel-item" data-interval="10000">
-                    <img class="d-block w-100 img-thumbnail" src="assets/img/aleks-marinkovic-kzXKQ3KhqDo-unsplash_sm.png" alt="Second slide">
+                  <div class="carousel-item">
+                    <img class="d-block w-100 img-thumbnail c2" src="assets/img/aleks-marinkovic-kzXKQ3KhqDo-unsplash_sm.png" alt="Second slide">
                   </div>
-                  <div class="carousel-item" data-interval="15000">
-                    <img class="d-block w-100 img-thumbnail" src="assets/img/anis-rahman-L_Z4t_hwDRQ-unsplash_sm.png" alt="Third slide">
+                  <div class="carousel-item">
+                    <img class="d-block w-100 img-thumbnail c2" src="assets/img/anis-rahman-L_Z4t_hwDRQ-unsplash_sm.png" alt="Third slide">
                   </div>
-                  <div class="carousel-item" data-interval="20000">
-                    <img class="d-block w-100 img-thumbnail" src="assets/img/chris-ralston-KulXAbGm5vI-unsplash_sm.png" alt="Third slide">
+                  <div class="carousel-item">
+                    <img class="d-block w-100 img-thumbnail c2" src="assets/img/chris-ralston-KulXAbGm5vI-unsplash_sm.png" alt="Third slide">
                   </div>
                 </div>
               </div>
@@ -313,33 +315,33 @@
           <div class="row no-gutters">
             <div class="carousel slide col mx-auto" data-ride="carousel" id="carousel-3">
                 <div class="carousel-inner">
-                  <div class="carousel-item active" data-interval="20000">
-                    <img class="d-block w-100 img-thumbnail" src="assets/img/kelly-neil-omEpnvmwWz0-unsplash_sm.png" alt="First slide">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100 img-thumbnail c3" src="assets/img/kelly-neil-omEpnvmwWz0-unsplash_sm.png" alt="First slide">
                   </div>
-                  <div class="carousel-item" data-interval="15000">
-                    <img class="d-block w-100 img-thumbnail" src="assets/img/raoul-ortega-2JtF6pYAOOI-unsplash_sm.png" alt="Second slide">
+                  <div class="carousel-item">
+                    <img class="d-block w-100 img-thumbnail c3" src="assets/img/raoul-ortega-2JtF6pYAOOI-unsplash_sm.png" alt="Second slide">
                   </div>
-                  <div class="carousel-item" data-interval="18500">
-                    <img class="d-block w-100 img-thumbnail" src="assets/img/aleks-marinkovic-kzXKQ3KhqDo-unsplash_sm.png" alt="Third slide">
+                  <div class="carousel-item">
+                    <img class="d-block w-100 img-thumbnail c3" src="assets/img/aleks-marinkovic-kzXKQ3KhqDo-unsplash_sm.png" alt="Third slide">
                   </div>
-                  <div class="carousel-item" data-interval="35000">
-                    <img class="d-block w-100 img-thumbnail" src="assets/img/la-compagnie-robinson-nijXsx-oI7Y-unsplash_sm.png" alt="Third slide">
+                  <div class="carousel-item">
+                    <img class="d-block w-100 img-thumbnail c3" src="assets/img/la-compagnie-robinson-nijXsx-oI7Y-unsplash_sm.png" alt="Third slide">
                   </div>
                 </div>
               </div>
               <div class="carousel slide col" data-ride="carousel" id="carousel-4">
               <div class="carousel-inner">
-                <div class="carousel-item active" data-interval="35000">
-                  <img class="d-block w-100 img-thumbnail" src="assets/img/raoul-ortega-2JtF6pYAOOI-unsplash_sm.png" alt="First slide">
+                <div class="carousel-item active">
+                  <img class="d-block w-100 img-thumbnail c4" src="assets/img/raoul-ortega-2JtF6pYAOOI-unsplash_sm.png" alt="First slide">
                 </div>
-                <div class="carousel-item" data-interval="15000">
-                  <img class="d-block w-100 img-thumbnail" src="assets/img/anis-rahman-L_Z4t_hwDRQ-unsplash_sm.png" alt="Second slide">
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-thumbnail c4" src="assets/img/anis-rahman-L_Z4t_hwDRQ-unsplash_sm.png" alt="Second slide">
                 </div>
-                <div class="carousel-item" data-interval="25000">
-                  <img class="d-block w-100 img-thumbnail" src="assets/img/chris-ralston-KulXAbGm5vI-unsplash_sm.png" alt="Third slide">
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-thumbnail c4" src="assets/img/chris-ralston-KulXAbGm5vI-unsplash_sm.png" alt="Third slide">
                 </div>
-                <div class="carousel-item" data-interval="20000">
-                  <img class="d-block w-100 img-thumbnail" src="assets/img/aleks-marinkovic-kzXKQ3KhqDo-unsplash_sm.png" alt="Third slide">
+                <div class="carousel-item">
+                  <img class="d-block w-100 img-thumbnail c4" src="assets/img/aleks-marinkovic-kzXKQ3KhqDo-unsplash_sm.png" alt="Third slide">
                 </div>
               </div>
             </div>
@@ -385,6 +387,7 @@
     <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
     <script src="assets/js/material-kit.js?v=2.0.7"></script>
     <!-- Any other custom javascript for the page  -->
+    <script src="jqueryui/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script src="assets/js/app.js"></script>
     <!-- endbuild -->
     <!-- Place this tag in your head or just before your close body tag. -->
