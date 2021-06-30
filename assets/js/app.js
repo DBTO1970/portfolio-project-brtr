@@ -18,7 +18,10 @@ $(function() {
         updateTime();
     }
 
-    // Carousel picture direction change
+    // trade ticker
+
+
+    
     
     
 });

@@ -90,6 +90,7 @@ $body-font: "Roboto", sans-serif;
 $header-font: "Roboto";
 body {
     font-family: $body-font;
+    background-color: $info;
 }
 
 h1, h2, h3, h4 {
