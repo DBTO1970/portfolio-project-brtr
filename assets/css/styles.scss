@@ -88,9 +88,15 @@ $theme-colors: map-merge((
 
 $body-font: "Roboto", sans-serif;
 $header-font: "Roboto";
+* {
+    margin: 0;
+    padding: 0;
+    
+}
 body {
     font-family: $body-font;
     background-color: $info;
+    width: 100%;
 }
 
 h1, h2, h3, h4 {

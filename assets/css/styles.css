@@ -20067,9 +20067,14 @@ footer {
     transform: translate3d(-25px, 0, 0);
     width: 245px; } }
 
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #008fa5; }
+  background-color: #008fa5;
+  width: 100%; }
 
 h1, h2, h3, h4 {
   font-family: "Roboto"; }
